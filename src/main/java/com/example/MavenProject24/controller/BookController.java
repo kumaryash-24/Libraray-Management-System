@@ -38,13 +38,7 @@ public class BookController {
 								  @RequestParam(name = "statusFilter", required = false) String statusFilter) {
 		List<Book> books;
 
-		if (searchTerm != null && !searchTerm.trim().isEmpty()) {
-			// Search by name or author if a search term is provided
-			if (statusFilter != null && !statusFilter.isEmpty()) {
-				// Search by term AND filter by status
-				books = bookRepository.findByNameContainingIgnoreCaseAndStatusOrAuthorContainingIgnoreCaseAndStatus(
-					searchTerm, statusFilter, searchTerm, statusFilter
-				);
+	
 			} else {
 				// Search by term only
 				books = bookRepository.findByNameContainingIgnoreCaseOrAuthorContainingIgnoreCase(searchTerm, searchTerm);
@@ -135,8 +129,7 @@ public class BookController {
 							 @RequestParam("borrowedForDays") int borrowedForDays,
 							 RedirectAttributes redirectAttributes) {
 		Optional<Book> bookOptional = bookRepository.findById(id);
-		if (bookOptional.isPresent()) {
-			Book book = bookOptional.get();
+		
 			if (book.getStatus().equals("available")) {
 				book.setStatus("borrowed");
 				book.setBorrowedDate(new Date());
