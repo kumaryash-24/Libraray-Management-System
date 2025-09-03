@@ -1,7 +1,7 @@
 <h1 align="center">🌟 Yash Digital Library 📚</h1>
 
 <p align="center">
-  A modern, visually stunning web application for comprehensive school library management, built with a robust Spring Boot backend and an exceptionally attractive, responsive user interface featuring captivating 3D effects.
+  A modern, visually stunning web application for comprehensive school library management, built with a robust Spring Boot backend and an exceptionally attractive, responsive user interface featuring captivating 3D effects.            
 </p>
 
 <p align="center">
