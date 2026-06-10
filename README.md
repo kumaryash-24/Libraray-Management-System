@@ -4,7 +4,7 @@
   A modern, visually stunning web application for comprehensive school library management, built with a robust Spring Boot backend and an exceptionally attractive, responsive user interface featuring captivating 3D effects.                 
 </p>        
        
-<p align="center">   
+<p align="center">       
   <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java">
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot">                        
   <img src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Data JPA">
